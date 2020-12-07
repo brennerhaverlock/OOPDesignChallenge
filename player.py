@@ -6,7 +6,7 @@ from gas import Gas
 class Player():
     """Start the player off with a set amount of money"""
     def __init__(self, balance):
-        super().__init__(50000)
+        # super().__init__(50000)
         self.balance = 50000
 
     cars = 0
@@ -28,5 +28,8 @@ class Player():
             self.cars -= 1
         else:
             "You're unable to sell a car due to no cars"
+
+
+new_car = Electric(1, 50000, 4, model= "Tesla")
 
 

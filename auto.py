@@ -4,9 +4,8 @@ from abc import ABC, abstractmethod
 
 class Auto:
 
-    def __init__(self,balance = 100000, wheels = 4, engine = "Gas", model = "Ford Pinto" ):
+    def __init__(self, wheels = 4, engine = "Electric", model = "Ford Pinto" ):
         """Each player has wheels, a engine, and a model"""
-        self.balance = balance
         self.wheels = wheels
         self.engine = engine
         self.model = model

@@ -1,9 +1,8 @@
 from auto import Auto
 class Electric(Auto):
 
-    def __init__(self, cars = 1, balance = 50000, price = 50000, wheels = 4, engine = "Electric", model = "Tesla"):
+    def __init__(self, cars = 1, price = 50000, wheels = 4, engine = "Electric", model = "Tesla"):
         self.price = price
-        self.balance = balance
         self.cars = cars
         self.wheels = 4
         self.engine = engine
@@ -19,6 +18,9 @@ class Electric(Auto):
     def sellCar(self, price):
         if self.cars < price:
             print("you have sold the car")
+            self.cars -= 1
+        else:
+            print("you need a car to sell")
 
 
     def start(self):
