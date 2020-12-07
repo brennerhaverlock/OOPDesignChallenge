@@ -10,6 +10,13 @@ class Player():
         self.balance = 50000
 
     cars = 0
+
+    def spin_cash_wheel(self, cash):
+        """add money by rolling virtual dice"""
+        num1 = random.randint(1, 20)
+        num2 = random.randint(1, 20)
+        print(f"{num1}, {num2}")
+        self.balance += (num1 * num2)
     
     def buyCar(self, price):
         """Buy car"""
@@ -30,6 +37,7 @@ class Player():
             "You're unable to sell a car due to no cars"
 
 
-new_car = Electric(1, 50000, 4, model= "Tesla")
+#create new car
+
 
 

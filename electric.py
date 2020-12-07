@@ -28,3 +28,9 @@ class Electric(Auto):
 
     def stop(self):
         print("Engine has been turnedd off")
+
+
+new_car = Electric(1, 50000, 4, model= "Tesla")
+new_car.setEngine("Electric")
+new_car.set_price(100000)
+print(new_car.price)

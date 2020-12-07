@@ -47,13 +47,4 @@ class Auto:
 
     def stop(self):
         print("Engine has been turnedd off")
-
-
-#create car object of Auto class
-car_one = Auto(4,"gas", "Honda Accord")
-car_one.start()
-    #Car
-     #SportsCar  
-     #Racecar
-     #Semi
      
