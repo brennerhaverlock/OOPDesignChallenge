@@ -5,3 +5,8 @@ class Gas(Auto):
         self.wheels = wheels
         self.engine = engine
         self.model = model
+
+    def setEngine(self):
+        """setting engine type to gas"""
+        self.engine = "Gas"
+        print("You've chosen a gas powered car")
